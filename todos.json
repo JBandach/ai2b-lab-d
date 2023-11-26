@@ -1,0 +1,11 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "deadline": "2025-01-01",
+      "completed": false,
+      "archived": false
+    }
+  ]
+}

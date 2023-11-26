@@ -1,0 +1,39 @@
+### GET list of tasks
+GET http://localhost:39203/todos/
+Accept: application/json
+
+### GET list of non-comleted tasks
+GET http://localhost:39203/todos/?completed=false
+Accept: application/json
+
+### GET list of comleted tasks
+GET http://localhost:39203/todos/?completed=true
+Accept: application/json
+
+### GET list of archived tasks
+GET http://localhost:39203/todos/?archived=false
+Accept: application/json
+
+### GET list of tasks sorted by ID ASC
+GET http://localhost:39203/todos/?_sort=id&_order=asc
+Accept: application/json
+
+### GET list of tasks sorted by ID DESC
+GET http://localhost:39203/todos/?_sort=id&_order=desc
+Accept: application/json
+
+### GET single task
+GET http://localhost:39203/todos/1
+Accept: application/json
+
+### PUT update task
+PUT http://localhost:39203/todos/4
+Content-Type: application/json
+
+{
+  "title": "Zjesc zupe",
+  "deadline": "2023-11-30",
+  "completed": true,
+  "archived": false
+}
+
